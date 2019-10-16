@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import axios from "axios";
 import { setToken } from "../../services/tokenService";
 
+
+// Nice clean and easy to read component!
 class Login extends Component {
   state = {
     type: "login",

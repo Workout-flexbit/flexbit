@@ -11,6 +11,7 @@ class ExerciseList extends Component {
   }
 
   componentDidMount() {
+    // Nice, thinking about the UX of the unhappy-path! Love it! 😍
     const noRes = setTimeout(() => {
       this.setState({
         noResultText:
@@ -28,7 +29,7 @@ class ExerciseList extends Component {
   };
 
   componentWillUnmount() {
-    clearInterval(this.setTimeout);
+    clearInterval(this.setTimeout); // Good catch remembering to cleanup your timeouts!
   }
 
   render() {

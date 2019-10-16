@@ -4,6 +4,8 @@ import WelcomeSection from "../WelcomeSection/";
 import Session from "../Session/";
 
 class Homepage extends Component {
+  // In some place we use the state property, and in some we set the state in the constructor
+  // For conistency, its nice to stick to one or the other
   state = {
     exerciseSelected: "",
     reps: 0,
@@ -46,6 +48,7 @@ class Homepage extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  // We don't need to use async if we're not using `await`
   handleSubmit = async e => {
     e.preventDefault();
     const exerciseObj = {
@@ -64,6 +67,7 @@ class Homepage extends Component {
       exerciseSelected: this.props.exerciseList[0]["name"]
     });
 
+    // It can be dangerous to mix DOM-APIs with react, when possible prefer react solutions (eg. reseting state rather than the DOM elements themselves)
     document.getElementById("exercise-form").reset();
   };
 
