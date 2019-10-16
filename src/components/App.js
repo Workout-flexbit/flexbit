@@ -18,6 +18,7 @@ class App extends Component {
       // user: true
     };
 
+    // We usually want to avoid side effects in the constructor in react, we should move this to a lifecycle method
     this.fetchExerciseList();
   }
 
