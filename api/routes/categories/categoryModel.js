@@ -11,4 +11,4 @@ const categorySchema = new Schema({
   }
 });
 
-module.exports = mongoose.model("category", categorySchema, "catergories");
+module.exports = mongoose.model("category", categorySchema, "catergories"); // I didn't know you could specify the plural! Awesome!
