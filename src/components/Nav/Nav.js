@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/flexbit-icon.jpg";
 
+// Short, clean, and presentational 🔥🔥🔥
 const Nav = ({ toggleLogin, user, logout }) => {
   return (
     <nav className="navbar is-transparent">

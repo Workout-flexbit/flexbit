@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // import axios from "axios";
 // import Exercise from "../Exercise";
 
+// We could cut out a bit of boilerplate here by using a functional component
 class ExerciseForm extends Component {
   render() {
     const { exerciseList, handleChange, handleSubmit } = this.props;

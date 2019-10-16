@@ -1,6 +1,7 @@
 import React from "react";
 import TimeParser from "../../helper/TimeParser";
 
+// Love the purely presentational component! Nice and short too! 💯
 const Exercise = ({ exercise, canDelete }) => {
   const { name, weight, reps, sets, restTime, notes, id } = exercise;
   return (
@@ -21,6 +22,7 @@ const Exercise = ({ exercise, canDelete }) => {
           </button>
         )}
       </header>
+      {/* If you want to avoid the extra `null` at the end, you can short-circuit with && */}
       {notes ? (
         <div className="card-content message is-primary">
           <div className="message-body">{notes}</div>
